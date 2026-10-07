@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Siswa RPL - SMK Negeri 2 Surakarta</title>
+    <meta name="description" content="Portofolio siswa Rekayasa Perangkat Lunak SMK Negeri 2 Surakarta untuk pengajuan PKL.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff1f2', 100: '#ffe4e6', 500: '#f43f5e',
+                            600: '#e11d48', 700: '#be123c', 800: '#9f1239',
+                            900: '#72092c', 950: '#4a0418'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="artistic-bg-mesh relative overflow-x-hidden min-h-screen">
+
+    <!-- Decorative background -->
+    <div class="art-shape art-ring art-ring-one"></div>
+    <div class="art-shape art-ring art-ring-two"></div>
+    <div class="art-shape art-cross art-cross-one"></div>
+    <div class="art-shape art-cross art-cross-two"></div>
+    <div class="art-shape art-vertical-line art-line-one"></div>
+    <div class="art-shape art-vertical-line art-line-two"></div>
+    <div class="art-glow-orb orb-burgundy orb-one"></div>
+    <div class="art-glow-orb orb-crimson orb-two"></div>
+    <div class="art-glow-orb orb-burgundy orb-three"></div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-[#0b0d14]/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[72px] flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 py-3">
+                <div class="w-9 h-9 rounded bg-brand-900 border border-brand-700 flex items-center justify-center text-rose-200 font-mono text-xs font-bold shadow-sm">&gt;_</div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-heading font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base tracking-tight">SMK NEGERI 2 SURAKARTA</span>
+                        <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-brand-950 text-rose-300 border border-brand-800">RPL</span>
+                    </div>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-mono block">REKAYASA PERANGKAT LUNAK</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-1 text-[11px] font-mono font-semibold">
+                <a href="#hero" class="nav-link active">01 // HERO</a>
+                <a href="#profil" class="nav-link">02 // PROFIL</a>
+                <a href="#kompetensi" class="nav-link">03 // KOMPETENSI</a>
+                <a href="#skills" class="nav-link">04 // SKILL</a>
+                <a href="#proyek" class="nav-link">05 // PORTOFOLIO</a>
+                <a href="#kontak" class="nav-link">06 // KONTAK</a>
+            </nav>
+
+            <div class="flex items-center gap-2 sm:gap-3">
+                <button id="theme-toggle" class="theme-toggle" title="Ganti mode terang / gelap" type="button">
+                    <i id="theme-toggle-icon" class="fa-solid fa-moon text-brand-700"></i>
+                    <span id="theme-toggle-text" class="hidden sm:inline">MODE GELAP</span>
+                </button>
+                <a href="#kontak" class="hidden sm:inline-flex btn-editorial-primary px-4 py-2 text-xs items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> HUBUNGI SISWA
+                </a>
+                <button id="mobile-menu-toggle" class="lg:hidden w-9 h-9 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 flex items-center justify-center" type="button" aria-label="Buka menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-[#151926] border-t border-slate-200 dark:border-slate-800 px-4 py-3 space-y-1 text-xs font-mono">
+            <a href="#hero">01 // HERO</a>
+            <a href="#profil">02 // PROFIL SISWA</a>
+            <a href="#kompetensi">03 // KOMPETENSI RPL</a>
+            <a href="#skills">04 // METRIK SKILL</a>
+            <a href="#proyek">05 // PORTOFOLIO PROYEK</a>
+            <a href="#kontak">06 // KONTAK PKL</a>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 py-10">
+
+        <!-- HERO -->
+        <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-6 scroll-mt-24">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="section-code inline-flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i>
+                    <span>[SYS.01] :: [PORTOFOLIO_SISWA_RPL]</span>
+                </div>
+
+                <div class="relative">
+                    <span class="hero-watermark">RPL</span>
+                    <h1 class="relative text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-slate-900 dark:text-slate-50 tracking-tight leading-[1.05]">
+                        Portofolio Siswa<br>
+                        <span class="text-brand-700 dark:text-rose-400">Rekayasa Perangkat Lunak</span>
+                    </h1>
+                </div>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-semibold">
+                    <span class="tag-mono-primary">SMK Negeri 2 Surakarta</span>
+                    <span class="tag-mono-primary">RPL / PPLG</span>
+                    <span class="tag-mono-primary">PENGAJUAN PKL</span>
+                </div>
+
+                <p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed max-w-2xl">
+                    [ Isi dengan perkenalan singkat, fokus bidang yang diminati, dan tujuan pengajuan PKL. ]
+                </p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono">
+                    <div class="editorial-inset p-3"><span class="metric-label">PROYEK</span><strong>0</strong></div>
+                    <div class="editorial-inset p-3"><span class="metric-label">SKILL</span><strong>0</strong></div>
+                    <div class="editorial-inset p-3"><span class="metric-label">SERTIFIKAT</span><strong>0</strong></div>
+                    <div class="editorial-inset p-3"><span class="metric-label">STATUS PKL</span><strong class="text-emerald-600 dark:text-emerald-400">READY</strong></div>
+                </div>
+
+                <div class="flex flex-wrap gap-4 pt-1">
+                    <a href="#proyek" class="btn-editorial-primary px-6 py-3 text-xs flex items-center gap-2"><i class="fa-solid fa-code-branch"></i> LIHAT PORTOFOLIO</a>
+                    <a href="#kontak" class="btn-editorial-outline px-6 py-3 text-xs flex items-center gap-2"><i class="fa-solid fa-file-arrow-down"></i> CV / BERKAS PKL</a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="terminal-box overflow-hidden font-mono text-xs">
+                    <div class="terminal-bar px-4 py-2.5 flex items-center justify-between">
+                        <div class="flex items-center gap-2"><i class="terminal-dot red"></i><i class="terminal-dot yellow"></i><i class="terminal-dot green"></i></div>
+                        <span class="text-slate-400 text-[10px] sm:text-[11px]">~/rpl/portfolio/profile.json</span>
+                        <i class="fa-solid fa-terminal text-slate-400"></i>
+                    </div>
+                    <div class="p-5 space-y-4 text-slate-300 leading-relaxed min-h-[320px]">
+                        <div class="flex items-center gap-2 text-rose-400"><span>student@smkn2-rpl:~$</span><span id="terminal-typing"></span><span class="animate-pulse w-2 h-4 bg-rose-400 inline-block"></span></div>
+                        <div class="pt-2 text-slate-400 space-y-2">
+                            <p class="text-emerald-400">[OK] Portfolio environment loaded.</p>
+                            <p>[SYS] Student: <span class="text-slate-100">[ Nama Siswa ]</span></p>
+                            <p>[SYS] School: <span class="text-rose-300">SMK Negeri 2 Surakarta</span></p>
+                            <p>[SYS] Major: <span class="text-amber-300">Rekayasa Perangkat Lunak</span></p>
+                            <p>[SYS] Purpose: <span class="text-slate-300">Pengajuan PKL</span></p>
+                        </div>
+                        <div class="pt-5 border-t border-slate-800 flex justify-between text-[10px] text-slate-500"><span>STATUS: READY</span><span class="text-rose-400">2026</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFIL -->
+        <section id="profil" class="space-y-8 pt-4 scroll-mt-24">
+            <div class="section-heading"><div><div class="section-kicker">[SYS.02] :: PROFIL SISWA &amp; DATA AKADEMIK</div><h2>Data Diri &amp; Identitas Siswa</h2></div><span class="section-side">SMK NEGERI 2 SURAKARTA</span></div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-5 editorial-card p-6 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="profile-avatar"><i class="fa-solid fa-user-gear"></i></div>
+                        <div><h3 class="font-heading font-bold text-lg">[ Nama Lengkap Siswa ]</h3><p class="text-xs font-mono text-slate-500">NISN: [ Empty ] // KELAS: [ Empty ]</p><span class="tag-mono-primary mt-2 inline-block">RPL / PPLG</span></div>
+                    </div>
+                    <div class="editorial-inset p-4 space-y-3 text-xs font-mono">
+                        <div class="data-row"><span>SEKOLAH:</span><strong>SMK Negeri 2 Surakarta</strong></div>
+                        <div class="data-row"><span>JURUSAN:</span><strong>Rekayasa Perangkat Lunak</strong></div>
+                        <div class="data-row"><span>EMAIL:</span><span>[ Empty ]</span></div>
+                        <div class="data-row"><span>TELEPON:</span><span>[ Empty ]</span></div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 editorial-card p-6 space-y-6">
+                    <div><div class="mini-title"><i class="fa-solid fa-circle-info"></i> TENTANG DIRI SAYA</div><div class="editorial-inset p-4 text-sm text-slate-500">[ Tulis deskripsi singkat mengenai diri, minat di bidang teknologi, dan alasan ingin mengikuti PKL. ]</div></div>
+                    <div><div class="mini-title"><i class="fa-solid fa-list-check"></i> RINCIAN IDENTITAS</div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="info-box"><span>Nama Lengkap</span><strong>[ Empty ]</strong></div>
+                        <div class="info-box"><span>Kelas / Keahlian</span><strong>[ Empty ]</strong></div>
+                        <div class="info-box"><span>NIS / NISN</span><strong>[ Empty ]</strong></div>
+                        <div class="info-box"><span>Domisili</span><strong>[ Empty ]</strong></div>
+                    </div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KOMPETENSI -->
+        <section id="kompetensi" class="space-y-8 pt-4 scroll-mt-24">
+            <div class="section-heading"><div><div class="section-kicker">[SYS.03] :: PILAR KOMPETENSI KEJURUAN RPL</div><h2>Kompetensi yang Dipelajari</h2></div></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="editorial-card pillar"><span class="pillar-number">01</span><h3>Web Engineering</h3><p>Pengembangan aplikasi web dari struktur halaman, antarmuka, hingga integrasi basis data.</p><div><span class="tag-mono">[ HTML ]</span> <span class="tag-mono">[ CSS ]</span></div></article>
+                <article class="editorial-card pillar"><span class="pillar-number">02</span><h3>Mobile Development</h3><p>Pengembangan aplikasi Android menggunakan Android Studio dan bahasa pemrograman yang dipelajari.</p><div><span class="tag-mono">[ JAVA ]</span> <span class="tag-mono">[ ANDROID ]</span></div></article>
+                <article class="editorial-card pillar"><span class="pillar-number">03</span><h3>Database Management</h3><p>Perancangan basis data, relasi tabel, pemodelan data, dan pengelolaan query terstruktur.</p><div><span class="tag-mono">[ SQL ]</span> <span class="tag-mono">[ MYSQL ]</span></div></article>
+                <article class="editorial-card pillar"><span class="pillar-number">04</span><h3>Dev Workflow &amp; QA</h3><p>Penerapan version control, pengujian, debugging, dan alur kerja pengembangan perangkat lunak.</p><div><span class="tag-mono">[ GIT ]</span> <span class="tag-mono">[ DEBUG ]</span></div></article>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="space-y-8 pt-4 scroll-mt-24">
+            <div class="section-heading"><div><div class="section-kicker">[SYS.04] :: STACK TEKNOLOGI &amp; METRIK SKILL</div><h2>Skill &amp; Teknologi</h2></div><div class="flex gap-2 font-mono text-[11px]"><button class="filter-tab-btn active" data-filter="all">SEMUA</button><button class="filter-tab-btn" data-filter="web">WEB</button><button class="filter-tab-btn" data-filter="mobile">MOBILE</button></div></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="filterable-card editorial-card p-6 space-y-4" data-category="web"><div class="flex justify-between"><h3>HTML / CSS</h3><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div><p>[ Isi level penguasaan ]</p></article>
+                <article class="filterable-card editorial-card p-6 space-y-4" data-category="web"><div class="flex justify-between"><h3>JavaScript</h3><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div><p>[ Isi level penguasaan ]</p></article>
+                <article class="filterable-card editorial-card p-6 space-y-4" data-category="mobile"><div class="flex justify-between"><h3>Java / Android</h3><strong>0%</strong></div><div class="progress-track"><div class="progress-fill" style="width:0%"></div></div><p>[ Isi level penguasaan ]</p></article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="proyek" class="space-y-8 pt-4 scroll-mt-24">
+            <div class="section-heading"><div><div class="section-kicker">[SYS.05] :: PORTOFOLIO PROYEK</div><h2>Dokumentasi Karya Siswa</h2></div></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="editorial-card project-card"><div class="project-preview"><i class="fa-solid fa-code"></i><span>[ PROJECT PREVIEW ]</span></div><div><h3>[ Nama Proyek Web ]</h3><p>[ Deskripsi singkat proyek dan fungsi utamanya. ]</p></div><div class="project-meta"><span>[ HTML / CSS / JS ]</span><a href="#">DETAIL <i class="fa-solid fa-arrow-right"></i></a></div></article>
+                <article class="editorial-card project-card"><div class="project-preview"><i class="fa-solid fa-mobile-screen"></i><span>[ PROJECT PREVIEW ]</span></div><div><h3>[ Nama Proyek Android ]</h3><p>[ Deskripsi singkat aplikasi dan fitur yang dibuat. ]</p></div><div class="project-meta"><span>[ JAVA / ANDROID ]</span><a href="#">DETAIL <i class="fa-solid fa-arrow-right"></i></a></div></article>
+                <article class="editorial-card project-card"><div class="project-preview"><i class="fa-solid fa-database"></i><span>[ PROJECT PREVIEW ]</span></div><div><h3>[ Nama Proyek Database ]</h3><p>[ Deskripsi singkat sistem atau basis data yang dibuat. ]</p></div><div class="project-meta"><span>[ SQL / MYSQL ]</span><a href="#">DETAIL <i class="fa-solid fa-arrow-right"></i></a></div></article>
+            </div>
+        </section>
+
+        <!-- EDUCATION / ACHIEVEMENTS -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-4">
+            <div class="space-y-6"><div class="section-heading simple"><div><div class="section-kicker">[SYS.06] :: PENDIDIKAN</div><h2>Riwayat Studi</h2></div></div><article class="editorial-card p-6"><div class="flex justify-between gap-4"><div><h3 class="font-heading font-bold text-lg">SMK Negeri 2 Surakarta</h3><span class="text-xs font-mono text-brand-700 dark:text-rose-400">Rekayasa Perangkat Lunak</span></div><span class="tag-mono whitespace-nowrap">2024 - SEKARANG</span></div><p class="text-sm text-slate-500 mt-4">Fokus pembelajaran pada pemrograman web, aplikasi mobile, basis data, dan pengembangan perangkat lunak.</p></article></div>
+            <div class="space-y-6"><div class="section-heading simple"><div><div class="section-kicker">[SYS.07] :: SERTIFIKASI &amp; PRESTASI</div><h2>Prestasi &amp; Sertifikasi</h2></div></div><div class="space-y-4"><article class="editorial-card p-4 flex items-center gap-4"><span class="achievement-number">01</span><div><span class="text-[10px] font-mono text-slate-400">[ Empty ]</span><h3 class="text-sm font-semibold">[ Tambahkan prestasi / sertifikasi ]</h3></div></article><article class="editorial-card p-4 flex items-center gap-4"><span class="achievement-number">02</span><div><span class="text-[10px] font-mono text-slate-400">[ Empty ]</span><h3 class="text-sm font-semibold">[ Tambahkan prestasi / sertifikasi ]</h3></div></article></div></div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="kontak" class="pt-4 scroll-mt-24">
+            <div class="contact-panel">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+                    <div class="lg:col-span-7 space-y-4"><span class="contact-label">[SYS.08] :: PENGAJUAN PKL / KONTAK</span><h2>Siap untuk Kesempatan PKL di Bidang RPL?</h2><p>Gunakan bagian ini untuk menampilkan email, WhatsApp, atau kontak lain yang dapat digunakan oleh pihak perusahaan/sekolah untuk menghubungi kamu.</p></div>
+                    <div class="lg:col-span-5 flex flex-col gap-3"><button class="copy-text-btn contact-button" data-copy="emailkamu@example.com" type="button"><i class="fa-solid fa-envelope"></i><span>SALIN EMAIL</span></button><a href="https://wa.me/6280000000000" target="_blank" rel="noopener" class="contact-button outline"><i class="fa-brands fa-whatsapp text-emerald-400"></i><span>WHATSAPP</span></a></div>
+                </div>
+                <div class="contact-decor">RPL</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-8 mt-16 bg-white/70 dark:bg-[#07090f]/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+            <div class="flex items-center gap-2"><span class="footer-mark">&gt;_</span><span>SMK NEGERI 2 SURAKARTA — REKAYASA PERANGKAT LUNAK</span></div>
+            <span>PORTOFOLIO PENGAJUAN PKL © 2026</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
