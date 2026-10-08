@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vscodeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181825"/>
+      <stop offset="100%" stop-color="#11111b"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- VS Code / PowerShell Window Frame -->
+  <rect x="15" y="15" width="870" height="570" rx="14" fill="url(#vscodeBg)" stroke="#313244" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Window Header Bar -->
+  <path d="M 15 29 C 15 21 21 15 29 15 L 871 15 C 879 15 885 21 885 29 L 885 55 L 15 55 Z" fill="#1e1e2e" />
+  
+  <!-- Window Control Buttons (Red Yellow Green) -->
+  <circle cx="42" cy="35" r="6" fill="#f38ba8"/>
+  <circle cx="62" cy="35" r="6" fill="#f9e2af"/>
+  <circle cx="82" cy="35" r="6" fill="#a6e3a1"/>
+
+  <!-- Window Title -->
+  <text x="450" y="39" font-family="'JetBrains Mono', 'Consolas', monospace" font-size="13" font-weight="700" fill="#cdd6f4" text-anchor="middle">PowerShell — python screening_ispa.py</text>
+
+  <!-- Terminal Content -->
+  <g font-family="'JetBrains Mono', 'Consolas', monospace" font-size="14" font-weight="600">
+    <!-- Prompt Command -->
+    <text x="45" y="90" fill="#a6e3a1">PS D:\portfolio-pkl&gt; <tspan fill="#f9e2af">python screening_ispa.py</tspan></text>
+
+    <!-- App Banner -->
+    <text x="45" y="125" fill="#89b4fa">==========================================</text>
+    <text x="45" y="150" fill="#89b4fa">       DETEKSI RISIKO ISPA SEDERHANA</text>
+    <text x="45" y="175" fill="#89b4fa">==========================================</text>
+
+    <!-- Inputs -->
+    <text x="45" y="210" fill="#bac2de">Nama pasien              : <tspan fill="#a6e3a1">Pasien Simulasi A</tspan></text>
+    <text x="45" y="235" fill="#bac2de">Umur pasien              : <tspan fill="#a6e3a1">17</tspan></text>
+    <text x="45" y="260" fill="#bac2de">Suhu tubuh (°C)         : <tspan fill="#a6e3a1">36.6</tspan></text>
+    <text x="45" y="285" fill="#bac2de">Frekuensi batuk per hari : <tspan fill="#a6e3a1">1</tspan></text>
+    <text x="45" y="310" fill="#bac2de">Mengalami sesak napas? (ya/tidak): <tspan fill="#a6e3a1">tidak</tspan></text>
+
+    <!-- Outputs -->
+    <text x="45" y="355" fill="#89b4fa">==========================================</text>
+    <text x="45" y="380" fill="#cdd6f4">              HASIL PEMERIKSAAN</text>
+    <text x="45" y="405" fill="#89b4fa">==========================================</text>
+
+    <text x="45" y="435" fill="#bac2de">Nama pasien       : <tspan fill="#cdd6f4">Pasien Simulasi A</tspan></text>
+    <text x="45" y="460" fill="#bac2de">Umur              : <tspan fill="#cdd6f4">17 tahun</tspan></text>
+    <text x="45" y="485" fill="#bac2de">Suhu tubuh        : <tspan fill="#a6e3a1">36.6 °C</tspan> <tspan fill="#a6e3a1">(Normal)</tspan></text>
+    <text x="45" y="510" fill="#bac2de">Skor risiko       : <tspan fill="#a6e3a1" font-weight="800">0</tspan></text>
+    <text x="45" y="535" fill="#bac2de">Tingkat risiko    : <tspan fill="#a6e3a1" font-weight="900">RENDAH (Kondisi Sehat)</tspan></text>
+
+    <text x="45" y="565" fill="#a6e3a1">PS D:\portfolio-pkl&gt; <tspan fill="#f5e0dc" opacity="0.8">█</tspan></text>
+  </g>
+</svg>

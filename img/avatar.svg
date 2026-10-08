@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- White Sand & Ocean Gradient Background -->
+    <linearGradient id="sandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    
+    <!-- Ocean Wave Decor -->
+    <linearGradient id="oceanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+
+    <!-- Avatar Shirt Gradient -->
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    
+    <!-- Soft Drop Shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle (White Sand & Light Ocean Vibe) -->
+  <circle cx="250" cy="250" r="230" fill="url(#sandBg)" stroke="#bae6fd" stroke-width="4" filter="url(#softShadow)" />
+  
+  <!-- Subtle White Sand Wave Pattern in Background -->
+  <path d="M 30 320 Q 150 280 250 310 T 470 290 L 470 480 L 30 480 Z" fill="#ffffff" opacity="0.7" />
+  <path d="M 20 370 Q 180 340 300 370 T 480 350 L 480 480 L 20 480 Z" fill="#f0f9ff" opacity="0.9" />
+
+  <!-- Outer Ring Highlight -->
+  <circle cx="250" cy="250" r="230" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <!-- Minimalist Vector Student Avatar (No AI Slop, Clean Geometry) -->
+  <g id="student-avatar" transform="translate(0, 15)">
+    <!-- Shoulders & Torso / Jacket -->
+    <path d="M 120 440 C 120 350 170 310 250 310 C 330 310 380 350 380 440 Z" fill="url(#shirtGradient)" />
+    
+    <!-- School Shirt Collar / Polo V-Neck -->
+    <path d="M 215 310 L 250 365 L 285 310 Z" fill="#ffffff" />
+    <path d="M 235 310 L 250 365 L 265 310 Z" fill="#0284c7" />
+
+    <!-- Neck -->
+    <rect x="225" y="245" width="50" height="75" rx="10" fill="#fbcfe8" opacity="0.15"/>
+    <rect x="225" y="245" width="50" height="75" rx="10" fill="#e2e8f0"/>
+
+    <!-- Head / Face Base -->
+    <ellipse cx="250" cy="210" rx="65" ry="75" fill="#cbd5e1" />
+    <ellipse cx="250" cy="208" rx="63" ry="73" fill="#f8fafc" />
+
+    <!-- Hair (Clean Minimalist Haircut) -->
+    <path d="M 182 195 C 180 140 220 120 250 120 C 280 120 320 140 318 195 C 310 160 285 145 250 145 C 215 145 190 160 182 195 Z" fill="#0f172a" />
+    <path d="M 180 195 C 185 160 210 135 250 135 C 275 135 305 148 318 185 C 310 175 295 165 275 165 C 235 165 200 180 180 195 Z" fill="#1e293b" />
+
+    <!-- Modern Glasses (Tech / PPLG Student Vibe) -->
+    <g stroke="#0f172a" stroke-width="4.5" fill="none">
+      <!-- Left Lens -->
+      <rect x="200" y="190" width="40" height="30" rx="8" fill="#ffffff" fill-opacity="0.8" />
+      <!-- Right Lens -->
+      <rect x="260" y="190" width="40" height="30" rx="8" fill="#ffffff" fill-opacity="0.8" />
+      <!-- Bridge -->
+      <line x1="240" y1="202" x2="260" y2="202" />
+      <!-- Temple Left & Right -->
+      <line x1="187" y1="202" x2="200" y2="202" />
+      <line x1="300" y1="202" x2="313" y2="202" />
+    </g>
+
+    <!-- Eyes (Minimalist Dots inside glasses) -->
+    <circle cx="220" cy="205" r="4.5" fill="#0f172a" />
+    <circle cx="280" cy="205" r="4.5" fill="#0f172a" />
+    <circle cx="221.5" cy="203.5" r="1.5" fill="#ffffff" />
+    <circle cx="281.5" cy="203.5" r="1.5" fill="#ffffff" />
+
+    <!-- Friendly Smile -->
+    <path d="M 235 242 Q 250 252 265 242" fill="none" stroke="#334155" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- PPLG Badge Icon -->
+  <g transform="translate(330, 330)">
+    <rect x="0" y="0" width="90" height="36" rx="18" fill="#0284c7" />
+    <text x="45" y="23" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff" text-anchor="middle">PPLG</text>
+  </g>
+  
+  <!-- SMKN 2 Badge Icon -->
+  <g transform="translate(70, 330)">
+    <rect x="0" y="0" width="105" height="36" rx="18" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+    <text x="52" y="23" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#0284c7" text-anchor="middle">SMKN 2</text>
+  </g>
+</svg>

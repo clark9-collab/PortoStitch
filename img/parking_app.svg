@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6a1b9a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Phone Frame Illustration -->
+  <g transform="translate(240, 15)">
+    <!-- Outer Phone Border -->
+    <rect x="0" y="0" width="320" height="470" rx="28" fill="#1e293b" filter="url(#cardShadow)"/>
+    <rect x="6" y="6" width="308" height="458" rx="24" fill="#ffffff"/>
+
+    <!-- Top Camera Notch Notch -->
+    <circle cx="160" cy="22" r="6" fill="#0f172a"/>
+
+    <!-- Android App Header -->
+    <rect x="6" y="36" width="308" height="44" fill="#6A1B9A"/>
+    <text x="160" y="63" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#ffffff" text-anchor="middle">Sistem Pembayaran Parkir</text>
+
+    <!-- Card Input inside Phone -->
+    <rect x="18" y="92" width="284" height="350" rx="14" fill="#F3E5F5" stroke="#E1BEE7" stroke-width="1"/>
+
+    <!-- Form Fields in Phone -->
+    <g font-family="'Plus Jakarta Sans', sans-serif">
+      <text x="32" y="116" font-size="10" font-weight="700" fill="#4A148C">Masukan Nama:</text>
+      <rect x="32" y="122" width="256" height="24" rx="4" fill="#ffffff" stroke="#9C27B0" stroke-width="1"/>
+      <text x="40" y="138" font-size="10" fill="#333333">Arya Rafif Khalfani</text>
+
+      <text x="32" y="162" font-size="10" font-weight="700" fill="#4A148C">Masukan Plat Nomor:</text>
+      <rect x="32" y="168" width="256" height="24" rx="4" fill="#ffffff" stroke="#9C27B0" stroke-width="1"/>
+      <text x="40" y="184" font-size="10" fill="#333333">AD 1234 AB</text>
+
+      <text x="32" y="208" font-size="10" font-weight="700" fill="#4A148C">Pilih Area &amp; Kendaraan:</text>
+      <circle cx="40" cy="222" r="5" fill="#6A1B9A"/>
+      <text x="50" y="225" font-size="9" font-weight="600" fill="#333333">Luar (Swalayan)</text>
+      <circle cx="140" cy="222" r="5" fill="#6A1B9A"/>
+      <text x="150" y="225" font-size="9" font-weight="600" fill="#333333">Mobil</text>
+
+      <!-- Duration Counter Buttons (- 4 +) -->
+      <g transform="translate(32, 240)">
+        <rect x="0" y="0" width="30" height="30" rx="15" fill="#6A1B9A"/>
+        <text x="15" y="20" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">-</text>
+
+        <rect x="40" y="0" width="100" height="30" rx="6" fill="#ffffff" stroke="#9C27B0" stroke-width="1"/>
+        <text x="90" y="20" font-size="12" font-weight="800" fill="#6A1B9A" text-anchor="middle">4 Jam</text>
+
+        <rect x="150" y="0" width="30" height="30" rx="15" fill="#6A1B9A"/>
+        <text x="165" y="20" font-size="16" font-weight="800" fill="#ffffff" text-anchor="middle">+</text>
+      </g>
+
+      <!-- Button Proses Pembayaran -->
+      <rect x="32" y="285" width="256" height="34" rx="8" fill="#6A1B9A"/>
+      <text x="160" y="307" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle">PROSES PEMBAYARAN</text>
+
+      <!-- Karcis Dialog Pop Up Preview -->
+      <rect x="24" y="330" width="272" height="100" rx="8" fill="#ffffff" stroke="#6A1B9A" stroke-width="1.5"/>
+      <text x="36" y="348" font-size="10" font-weight="800" fill="#1A237E">Ringkasan Karcis Parkir (Dialog)</text>
+      <text x="36" y="364" font-size="9" fill="#424242">Nama: Arya Rafif Khalfani | Plat: AD 1234 AB</text>
+      <text x="36" y="378" font-size="9" fill="#424242">Kendaraan: Mobil - Area Luar Swalayan (4 Jam)</text>
+      <text x="36" y="396" font-size="11" font-weight="800" fill="#1A237E">Total Bayar: Rp 25.000</text>
+    </g>
+  </g>
+</svg>
